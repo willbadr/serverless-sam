@@ -1,8 +1,4 @@
 Transform: 'AWS::Serverless-2016-10-31'
-Parameters:
-    SamMultipler:
-        Description: "SAM multiplier. Make this really big to have a party :)"
-        Type: "String"
 Resources:
     GetSAMPartyCount:
         Type: AWS::Serverless::Function
@@ -10,9 +6,6 @@ Resources:
             Handler: index.handler
             Runtime: nodejs4.3
             CodeUri: ./
-            Environment:
-                Variables:
-                    SAM_MULTIPLIER: 2
             Events:
               GetResource:
                 Type: Api
