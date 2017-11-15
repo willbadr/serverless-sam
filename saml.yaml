@@ -15,7 +15,7 @@ Resources:
             CodeUri: ./
             Environment:
                 Variables:
-                    SAM_MULTIPLIER: !Ref SamMultipler
+                    SAM_MULTIPLIER: 5
                     ORIGIN_URL: !Ref OriginUrl
             Events:
               GetResource:
