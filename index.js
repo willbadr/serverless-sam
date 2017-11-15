@@ -3,7 +3,7 @@ var moment = require('moment');
 
 exports.handler = (event, context, callback) => {
 
-    var originURL = process.env.ORIGIN_URL || '*';
+#    var originURL = process.env.ORIGIN_URL || '*';
 
     emitLambdaAge();
 
@@ -27,7 +27,6 @@ exports.handler = (event, context, callback) => {
         {
             "Access-Control-Allow-Headers": "Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token",
             "Access-Control-Allow-Methods": "GET,OPTIONS",
-            "Access-Control-Allow-Origin": originURL
         }
     });
 }
